@@ -1,6 +1,8 @@
 /* eslint-disable array-callback-return */
 import React, { useState } from "react";
 
+import InfoCard from "./InfoCard";
+
 const styles = {
   root: { display: "flex", textAllign: "center" },
   cube: {
@@ -10,10 +12,11 @@ const styles = {
     maxHeight: 40,
     maxWidth: 40,
   },
+  rules: {},
 };
 
 const rows = 12;
-const cols = 25;
+const cols = 18;
 let interval = "";
 const selectedIn = new Set();
 
@@ -30,6 +33,7 @@ const Game = () => {
     }
     return rowV;
   });
+  const [startStopBtnLabel, setStartStopBtnLabel] = useState("Start");
   /* ****************/
 
   /* Actions*********/
@@ -60,10 +64,7 @@ const Game = () => {
                 return [...prevState];
               });
             }}
-          >
-            {i}
-            {j}
-          </div>
+          ></div>
         );
       }
       gridCol.push(<div key={j}>{gridRow}</div>);
@@ -72,6 +73,7 @@ const Game = () => {
   };
 
   const resetGrid = () => {
+    setStartStopBtnLabel("Start");
     clearInterval(interval);
     selectedIn.clear();
     setGridState(() => {
@@ -113,6 +115,7 @@ const Game = () => {
   ];
 
   const startSimulation = () => {
+    setStartStopBtnLabel("Running");
     interval = setInterval(() => {
       const tempSelectedIn = new Set();
       const delSet = new Set();
@@ -183,16 +186,21 @@ const Game = () => {
           });
         }
       }
-    }, 1000);
+    }, 500);
   };
 
   /* ****************/
 
   return (
     <>
-      <button onClick={startSimulation}>Start</button>
+      <button onClick={startSimulation}>{startStopBtnLabel}</button>
       <button onClick={resetGrid}>Reset</button>
-      <div style={styles.root}>{createGrid()}</div>
+      <div style={styles.root}>
+        {createGrid()}
+        <div style={styles.rules} class="card">
+          <InfoCard />
+        </div>
+      </div>
     </>
   );
 };
