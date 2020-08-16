@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/conway--gol/static/css/main.dcf906d4.chunk.css",
+    "main.js": "/conway--gol/static/js/main.4c9c9321.chunk.js",
+    "main.js.map": "/conway--gol/static/js/main.4c9c9321.chunk.js.map",
+    "runtime-main.js": "/conway--gol/static/js/runtime-main.c89b8d00.js",
+    "runtime-main.js.map": "/conway--gol/static/js/runtime-main.c89b8d00.js.map",
+    "static/js/2.734de3d7.chunk.js": "/conway--gol/static/js/2.734de3d7.chunk.js",
+    "static/js/2.734de3d7.chunk.js.map": "/conway--gol/static/js/2.734de3d7.chunk.js.map",
+    "index.html": "/conway--gol/index.html",
+    "precache-manifest.d4153f645ba4a52eb36b9f2a1ca092a7.js": "/conway--gol/precache-manifest.d4153f645ba4a52eb36b9f2a1ca092a7.js",
+    "service-worker.js": "/conway--gol/service-worker.js",
+    "static/css/main.dcf906d4.chunk.css.map": "/conway--gol/static/css/main.dcf906d4.chunk.css.map",
+    "static/js/2.734de3d7.chunk.js.LICENSE.txt": "/conway--gol/static/js/2.734de3d7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c89b8d00.js",
+    "static/js/2.734de3d7.chunk.js",
+    "static/css/main.dcf906d4.chunk.css",
+    "static/js/main.4c9c9321.chunk.js"
+  ]
+}
