@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/conway--gol/precache-manifest.d4153f645ba4a52eb36b9f2a1ca092a7.js"
+  "/conway--gol/precache-manifest.72d20fcd3d9ba897092a9620e6b69d8d.js"
 );
 
 self.addEventListener('message', (event) => {
